@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Loading from "./Loading";
 import Error from "./Error";
+import WeatherApp from "./WeatherApp";
 
 function App() {
 
@@ -35,7 +36,7 @@ function App() {
   }
 
   return (
-    <h1>El clima en Buenos Aires esta {resApi.weather[0].main}</h1>
+    <WeatherApp resApi={resApi}/>
   )
   
 }
