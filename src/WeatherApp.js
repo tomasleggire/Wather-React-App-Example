@@ -6,6 +6,12 @@ export default function WeatherApp({resApi}) {
 
     const [img, setImg] = React.useState("https://cdn-icons-png.flaticon.com/512/1146/1146869.png");
 
+    if (resApi.weather[0].description.includes('rain')) {
+        setImg('https://cdn-icons-png.flaticon.com/512/3093/3093390.png')
+    } else if (resApi.weather[0].description.includes('storm') || resApi.weather[0].description.includes('stormy')) {
+        setImg('https://cdn-icons-png.flaticon.com/512/3445/3445722.png')
+    }
+    
     return (
         <div style={divStyle}>
             <h1 style={h1Style}>Buenos Aires</h1>
