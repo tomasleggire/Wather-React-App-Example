@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Wather-React-App-Example/static/css/main.fd367df7.css",
+    "main.js": "/Wather-React-App-Example/static/js/main.3d0b9ce0.js",
+    "index.html": "/Wather-React-App-Example/index.html",
+    "main.fd367df7.css.map": "/Wather-React-App-Example/static/css/main.fd367df7.css.map",
+    "main.3d0b9ce0.js.map": "/Wather-React-App-Example/static/js/main.3d0b9ce0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fd367df7.css",
+    "static/js/main.3d0b9ce0.js"
+  ]
+}
