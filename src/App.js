@@ -9,7 +9,7 @@ function App() {
   const [error, setError] = React.useState(false);
 
   useEffect(() => {
-    fetch("https://api.openweathermap.org/data/2.5/weather?lat=-34.60&lon=-58.43&appid=82ba7e681789f0bac388a129ec9847b8")
+    fetch("https://api.openweathermap.org/data/2.5/weather?lat=-34.60&lon=-58.43&appid=82ba7e681789f0bac388a129ec9847b8&units=metric")
       .then((response) => response.json())
       .then((clima) => {
         setResApi(clima);
