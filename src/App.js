@@ -1,4 +1,6 @@
 import React, { useEffect } from "react";
+import Loading from "./Loading";
+import Error from "./Error";
 
 function App() {
 
@@ -22,13 +24,13 @@ function App() {
 
   if (error) {
     return (
-      <h1>Ocurrio un error...</h1>
+      <Error />
     )
   }
 
   if (isLoading) {
     return (
-      <h1>Cargando...</h1>
+      <Loading />
     )
   }
 
